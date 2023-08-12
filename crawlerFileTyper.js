@@ -30,7 +30,7 @@ if(isValidUrl(argumentFromJava)){
 		const html = await page.content(); 
 
 		//will copy the source code into a file for the java side to access
-		await fs.writeFile('reactstorefront.html', html); 
+		await fs.writeFile('html.html', html); 
 
 		await browser.close(); 
 
@@ -66,7 +66,7 @@ else{
 		
 		const html = await page.content(); 
 
-		await fs.writeFile('reactstorefront.html', html); 
+		await fs.writeFile('html.html', html); 
 
 		await browser.close();
 	})();
